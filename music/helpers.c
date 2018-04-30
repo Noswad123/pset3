@@ -66,7 +66,7 @@ bool is_rest(string s)      // Determines whether a string represents a rest
         return true;
     }
     else
-    {printf("false: %s\n",s);
+    {printf("false: %s\n",s); // prints false: string je
         return false;
     }
 }
@@ -75,7 +75,7 @@ int getIndex(string note)
 {
     const int noteOrder[] = {'A','X','G','X','F','E','X','D', 'X','C'}; //X is a place holder for the accidentals
 
-    for(int i = 0, length = sizeof(noteOrder)/sizeof(noteOrder[0]); i < length; i++)
+    for(int i = 0, length = sizeof(noteOrder)/sizeof(noteOrder[0]); i < length; i++) // for loop for note length je
     {
         // debugger comment printf("noteOrder: %c index value: %c\n", noteOrder[i], note[0]);
         //printf("length: %i\n", length);
@@ -90,4 +90,5 @@ int getIndex(string note)
     return 0;
 }
 // looks good
-// style50 indicates in need of stlying
+// style50 helpers.c indicates in need of stlying
+// can use more comments

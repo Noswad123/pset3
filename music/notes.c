@@ -19,16 +19,16 @@ int main(int argc, string argv[])
 {
     // Override default octave if specified at command line
     int octave = OCTAVE;
-    if (argc == 2)
+    if (argc == 2) // equal 2
     {
         octave = atoi(argv[1]);
-        if (octave < 0 || octave > 8)
+        if (octave < 0 || octave > 8) // print within range of 0 and 8 je
         {
             fprintf(stderr, "Invalid octave\n");
             return 1;
         }
     }
-    else if (argc > 2)
+    else if (argc > 2) // if greater then 2
     {
         fprintf(stderr, "Usage: notes [OCTAVE]\n");
         return 1;
