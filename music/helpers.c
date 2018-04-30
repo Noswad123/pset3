@@ -18,7 +18,7 @@ int duration(string fraction)       // Converts a fraction formatted as X/Y to e
 
 }
 
-int frequency(string note)
+int frequency(string note) // frequency pitch for each string note JE
 {
     int octave;
     int octaveDistance;
@@ -89,3 +89,5 @@ int getIndex(string note)
     }
     return 0;
 }
+// looks good
+// style50 indicates in need of stlying
